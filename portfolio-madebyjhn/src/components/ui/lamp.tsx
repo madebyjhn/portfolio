@@ -20,7 +20,7 @@ export const LampContainer = ({
       <div className="relative flex w-full flex-1 scale-y-125 items-center justify-center isolate z-0">
         {/* Left gradient */}
         <motion.div
-          initial={{ opacity: 0.5, width: "15rem" }}
+          initial={{ opacity: 0.5, width: "0rem" }}
           whileInView={{ opacity: 1, width: "100%" }}
           transition={{
             delay: 0.3,
@@ -38,7 +38,7 @@ export const LampContainer = ({
 
         {/* Right gradient */}
         <motion.div
-          initial={{ opacity: 0.5, width: "15rem" }}
+          initial={{ opacity: 0.5, width: "0rem" }}
           whileInView={{ opacity: 1, width: "100%" }}
           transition={{
             delay: 0.3,
@@ -55,13 +55,31 @@ export const LampContainer = ({
         </motion.div>
 
         {/* Background & Blurs */}
-        <div className="absolute top-1/2 h-48 w-full translate-y-12 scale-x-150 bg-slate-950 blur-2xl"></div>
-        <div className="absolute top-1/2 z-50 h-48 w-full bg-transparent opacity-10 backdrop-blur-md"></div>
-        <div className="absolute inset-auto z-50 h-36 w-[80vw] max-w-[28rem] -translate-y-1/2 rounded-full bg-cyan-500 opacity-50 blur-3xl"></div>
+{/* Background & Blurs */}
+<motion.div
+  initial={{ opacity: 0 }}
+  whileInView={{ opacity: 1 }}
+  transition={{ delay: 0.3, duration: 0.8, ease: "easeInOut" }}
+  className="absolute top-1/2 h-48 w-full translate-y-12 scale-x-150 bg-slate-950 blur-2xl"
+></motion.div>
+
+<motion.div
+  initial={{ opacity: 0 }}
+  whileInView={{ opacity: 0.1 }}
+  transition={{ delay: 0.3, duration: 0.8, ease: "easeInOut" }}
+  className="absolute top-1/2 z-50 h-48 w-full bg-transparent backdrop-blur-md"
+></motion.div>
+
+<motion.div
+  initial={{ opacity: 0 }}
+  whileInView={{ opacity: 0.5 }}
+  transition={{ delay: 0.3, duration: 0.8, ease: "easeInOut" }}
+  className="absolute inset-auto z-50 h-36 w-[80vw] max-w-[28rem] -translate-y-1/2 rounded-full bg-cyan-500 blur-3xl"
+></motion.div>
 
         {/* Inner glow */}
         <motion.div
-  initial={{ width: "8rem" }}
+  initial={{ width: "0rem" }}
   whileInView={{ width: "16rem" }}
   transition={{
     delay: 0.3,
@@ -77,8 +95,8 @@ export const LampContainer = ({
 
         {/* Top line */}
         <motion.div
-          initial={{ width: "15rem" }}
-          whileInView={{ width: "90vw", maxWidth: "30rem" }}
+          initial={{ width: "0rem" }}
+          whileInView={{ width: "30rem" }}
           transition={{
             delay: 0.3,
             duration: 0.8,
