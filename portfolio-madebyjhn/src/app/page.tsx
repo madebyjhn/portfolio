@@ -18,7 +18,7 @@ export default function Home() {
             duration: 0.8,
             ease: "easeInOut",
           }}
-          className="mt-8 bg-gradient-to-br from-slate-300 to-slate-500 py-4 bg-clip-text text-center text-3xl font-semibold tracking-tight text-transparent sm:text-5xl md:text-6xl lg:text-7xl"
+          className="mt-8 bg-gradient-to-br from-slate-300 to-slate-500 py-3 bg-clip-text text-center text-3xl font-semibold tracking-tight text-transparent sm:text-5xl md:text-6xl lg:text-7xl"
         >
           Johan CINOSI <br /> Web Developer Portfolio
         </motion.h1>
@@ -26,7 +26,7 @@ export default function Home() {
       <ShootingStars />
       <StarsBackground />
 
-      <div className="mt-[-12rem]">
+      <div className="mt-[-12rem] w-full min-h-screen">
         <ScrollCursor />
       </div>
 
