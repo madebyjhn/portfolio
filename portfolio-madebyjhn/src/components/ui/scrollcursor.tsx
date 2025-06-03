@@ -4,7 +4,16 @@ import { motion } from "framer-motion";
 
 export const ScrollCursor = ({ className = "" }: { className?: string }) => {
   return (
-    <div className={`w-full flex justify-center ${className}`}>
+    <motion.div
+      className={`w-full flex justify-center ${className}`}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{
+        delay: 2, // délai avant l’apparition (en secondes)
+        duration: 0.6,
+        ease: "easeInOut",
+      }}
+    >
       <div className="w-10 h-17 rounded-full border-2 border-white relative flex justify-center items-start">
         <motion.div
           className="w-6 h-6 bg-white rounded-full"
@@ -20,6 +29,6 @@ export const ScrollCursor = ({ className = "" }: { className?: string }) => {
           }}
         />
       </div>
-    </div>
+    </motion.div>
   );
 };

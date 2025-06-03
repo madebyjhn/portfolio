@@ -11,7 +11,7 @@ export default function Home() {
     <div className="w-full min-h-screen bg-slate-950 relative">
   <LampContainer>
     <motion.h1
-      initial={{ opacity: 0.5, y: 100 }}
+      initial={{ opacity: 0, y: 100 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{
         delay: 0.3,
