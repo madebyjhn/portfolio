@@ -15,7 +15,7 @@ Pour moi, chaque réalisation est une aventure, un moyen d’explorer, d’expé
 
 Que ce soit par la musique, l’image, ou tout autre forme d’expression, je cherche toujours à transmettre une émotion sincère et authentique.
 
-Je t’invite à parcourir mon univers, à découvrir ce que j’ai créé, et pourquoi pas, à échanger ensemble sur de nouvelles idées.`;
+Je t’invite à parcourir mon univers, à découvrir ce que j’ai créé, et pourquoi pas, à échanger ensemble sur de nouvelles idées !`;
 
 export default function Home() {
   return (
