@@ -2,7 +2,6 @@
 import React from "react";
 import { motion } from "motion/react";
 import { LampContainer } from "@/components/ui/lamp";
-import { MacbookScroll } from "@/components/ui/macbook";
 import { Vortex } from "@/components/ui/vortex";
 
 export default function Home() {
