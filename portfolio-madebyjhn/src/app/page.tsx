@@ -1,8 +1,7 @@
 "use client";
 import React from "react";
-import { motion } from "motion/react";
+import { motion } from "framer-motion"; // Attention: `motion/react` remplacé par `framer-motion`
 import { LampContainer } from "@/components/ui/lamp";
-import { Vortex } from "@/components/ui/vortex";
 import { ShootingStars } from "@/components/ui/shooting-stars";
 import { StarsBackground } from "@/components/ui/stars-background";
 
@@ -18,13 +17,13 @@ export default function Home() {
             duration: 0.8,
             ease: "easeInOut",
           }}
-          className="mt-8 bg-gradient-to-br from-slate-300 to-slate-500 py-4 bg-clip-text text-center text-4xl font-medium tracking-tight text-transparent md:text-7xl"
+          className="mt-8 bg-gradient-to-br from-slate-300 to-slate-500 py-4 bg-clip-text text-center text-3xl font-semibold tracking-tight text-transparent sm:text-5xl md:text-6xl lg:text-7xl"
         >
           Johan CINOSI <br /> Développeur Full-Stack
         </motion.h1>
       </LampContainer>
       <ShootingStars />
       <StarsBackground />
-      </div>
+    </div>
   );
 }
