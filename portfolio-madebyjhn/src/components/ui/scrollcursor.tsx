@@ -25,7 +25,7 @@ export const ScrollCursor = () => {
             ],
           }}
           transition={{
-            duration: 3,
+            duration: 2,
             ease: "linear",
             repeat: Infinity,
             times: [0, 0.5, 0.7, 0.72, 1], 
