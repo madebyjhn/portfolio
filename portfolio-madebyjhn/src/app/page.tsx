@@ -4,6 +4,7 @@ import { motion } from "framer-motion"; // Attention: `motion/react` remplacé p
 import { LampContainer } from "@/components/ui/lamp";
 import { ShootingStars } from "@/components/ui/shooting-stars";
 import { StarsBackground } from "@/components/ui/stars-background";
+import { ScrollCursor } from "@/components/ui/scrollcursor";
 
 export default function Home() {
   return (
@@ -19,11 +20,16 @@ export default function Home() {
           }}
           className="mt-8 bg-gradient-to-br from-slate-300 to-slate-500 py-4 bg-clip-text text-center text-3xl font-semibold tracking-tight text-transparent sm:text-5xl md:text-6xl lg:text-7xl"
         >
-          Johan CINOSI <br /> Développeur Full-Stack
+          Johan CINOSI <br /> Web Developer Portfolio
         </motion.h1>
       </LampContainer>
       <ShootingStars />
       <StarsBackground />
+
+      <div className="mt-[-12rem]">
+        <ScrollCursor />
+      </div>
+
     </div>
   );
 }
