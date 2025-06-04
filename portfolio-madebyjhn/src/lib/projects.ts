@@ -4,98 +4,65 @@ export const products = [
     link: "https://gomoonbeam.com",
     thumbnail:
       "https://aceternity.com/images/products/thumbnails/new/moonbeam.png",
-    color: "bg-white",
+    color: "bg-neutral-900 text-white",
   },
   {
     title: "Cursor",
     link: "https://cursor.so",
     thumbnail:
       "https://aceternity.com/images/products/thumbnails/new/cursor.png",
-    color: "bg-black",
+    color: "bg-gray-950 text-white",
   },
   {
     title: "Rogue",
     link: "https://userogue.com",
     thumbnail:
       "https://aceternity.com/images/products/thumbnails/new/rogue.png",
-    color: "bg-gray-500",
+    color: "bg-zinc-800 text-white",
   },
-
   {
     title: "Editorially",
     link: "https://editorially.org",
     thumbnail:
       "https://aceternity.com/images/products/thumbnails/new/editorially.png",
-    color: "bg-yellow",
+    color: "bg-black-700 text-white",
   },
   {
     title: "Editrix AI",
     link: "https://editrix.ai",
     thumbnail:
       "https://aceternity.com/images/products/thumbnails/new/editrix.png",
-    color: "bg-purple-100",
+    color: "bg-purple-800 text-white",
   },
   {
     title: "Pixel Perfect",
     link: "https://app.pixelperfect.quest",
     thumbnail:
       "https://aceternity.com/images/products/thumbnails/new/pixelperfect.png",
-    color: "bg-red",
+    color: "bg-gray-500 text-white",
   },
-
-  //   {
-  //     title: "Algochurn",
-  //     link: "https://algochurn.com",
-  //     thumbnail:
-  //       "https://aceternity.com/images/products/thumbnails/new/algochurn.png",
-  //   },
-  //   {
-  //     title: "Aceternity UI",
-  //     link: "https://ui.aceternity.com",
-  //     thumbnail:
-  //       "https://aceternity.com/images/products/thumbnails/new/aceternityui.png",
-  //   },
-  //   {
-  //     title: "Tailwind Master Kit",
-  //     link: "https://tailwindmasterkit.com",
-  //     thumbnail:
-  //       "https://aceternity.com/images/products/thumbnails/new/tailwindmasterkit.png",
-  //   },
-  //   {
-  //     title: "SmartBridge",
-  //     link: "https://smartbridgetech.com",
-  //     thumbnail:
-  //       "https://aceternity.com/images/products/thumbnails/new/smartbridge.png",
-  //   },
-  //   {
-  //     title: "Renderwork Studio",
-  //     link: "https://renderwork.studio",
-  //     thumbnail:
-  //       "https://aceternity.com/images/products/thumbnails/new/renderwork.png",
-  //   },
-
-  //   {
-  //     title: "Creme Digital",
-  //     link: "https://cremedigital.com",
-  //     thumbnail:
-  //       "https://aceternity.com/images/products/thumbnails/new/cremedigital.png",
-  //   },
-  //   {
-  //     title: "Golden Bells Academy",
-  //     link: "https://goldenbellsacademy.com",
-  //     thumbnail:
-  //       "https://aceternity.com/images/products/thumbnails/new/goldenbellsacademy.png",
-  //   },
-  //   {
-  //     title: "Invoker Labs",
-  //     link: "https://invoker.lol",
-  //     thumbnail:
-  //       "https://aceternity.com/images/products/thumbnails/new/invoker.png",
-  //   },
-  //   {
-  //     title: "E Free Invoice",
-  //     link: "https://efreeinvoice.com",
-  //     thumbnail:
-  //       "https://aceternity.com/images/products/thumbnails/new/efreeinvoice.png",
-  //   },
+  {
+    title: "À venir...",
+    link: "#",
+    thumbnail: "https://via.placeholder.com/400x300?text=Prochainement",
+    color: "bg-neutral-700 text-white",
+  },
+  {
+    title: "Projet secret 🔒",
+    link: "#",
+    thumbnail: "https://via.placeholder.com/400x300?text=Top+Secret",
+    color: "bg-gray-800 text-white",
+  },
+  {
+    title: "Collab en cours 🤝",
+    link: "#",
+    thumbnail: "https://via.placeholder.com/400x300?text=En+collaboration",
+    color: "bg-indigo-900 text-white",
+  },
+  {
+    title: "Expérimentation 🎨",
+    link: "#",
+    thumbnail: "https://via.placeholder.com/400x300?text=Prototype",
+    color: "bg-fuchsia-900 text-white",
+  },
 ];

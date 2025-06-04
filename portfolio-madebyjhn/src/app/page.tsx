@@ -11,11 +11,6 @@ import { Meteors } from "../components/ui/meteors";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 import { HeroParallax } from "@/components/ui/projects-parallax";
 import { products } from "@/lib/projects";
-import {
-  CardBody,
-  CardContainer,
-  CardItem,
-} from "@/components/ui/project-card";
 
 const words = `Salut ! Je m’appelle Johan CINOSI, diplômé d'un BAC+2 en développement Full-Stack.
 
@@ -44,6 +39,7 @@ export default function Home() {
   const isMobile = useIsMobile();
   const [open, setOpen] = useState(false);
   const [hasMounted, setHasMounted] = useState(false);
+  const bottomMargin = isMobile ? (open ? "mb-40" : "mb-20") : "mb-16";
 
   // Attend que le composant soit monté pour définir le bon état
   useEffect(() => {
@@ -89,15 +85,15 @@ export default function Home() {
         </motion.h1>
       </LampContainer>
 
-      <ShootingStars />
-      <StarsBackground />
+      <ShootingStars className="fixed inset-0 pointer-events-none" />
+      <StarsBackground className="fixed inset-0 pointer-events-none" />
       <ScrollCursor className="absolute mt-[-12rem]" />
 
       <motion.div
         onClick={() => isMobile && setOpen(!open)}
         initial={false}
         animate={controls}
-        className="relative w-full max-w-3xl mx-auto mt-24 cursor-pointer"
+        className={`relative w-full max-w-3xl mt-12 mx-auto ${bottomMargin}`}
       >
         {/* Halo flou */}
         <div className="absolute inset-0 rounded-3xl bg-gradient-to-r from-blue-500 to-teal-500 blur-3xl scale-90" />
