@@ -87,7 +87,9 @@ export default function Home() {
           {open == false ? (
             <div className="flex items-center justify-between text-white text-base sm:text-lg leading-relaxed">
               <span>À propos de moi</span>
-              <FaChevronDown className="ml-2 animate-bounce" />
+              <span className="ml-2 animate-bounce">
+                <FaChevronDown />
+              </span>
             </div>
           ) : (
             <>
@@ -105,7 +107,11 @@ export default function Home() {
               />
               {isMobile && (
                 <div className="flex justify-end mt-4 text-gray-400 text-sm">
-                  (Appuie pour refermer <FaChevronUp className="ml-1 inline" />)
+                  (Appuie pour refermer{" "}
+                  <span className="ml-1 inline">
+                    <FaChevronUp />
+                  </span>
+                  )
                 </div>
               )}
             </>
