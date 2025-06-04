@@ -9,6 +9,13 @@ import { ScrollCursor } from "@/components/ui/scrollcursor";
 import { TextGenerateEffect } from "../components/ui/text-generate";
 import { Meteors } from "../components/ui/meteors";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
+import { HeroParallax } from "@/components/ui/projects-parallax";
+import { products } from "@/lib/projects";
+import {
+  CardBody,
+  CardContainer,
+  CardItem,
+} from "@/components/ui/project-card";
 
 const words = `Salut ! Je m’appelle Johan CINOSI, diplômé d'un BAC+2 en développement Full-Stack.
 
@@ -22,6 +29,7 @@ Je t’invite à parcourir mon univers, à découvrir ce que j’ai créé, et p
 // Hook responsive simple
 function useIsMobile(breakpoint = 768) {
   const [isMobile, setIsMobile] = useState(false);
+
   useEffect(() => {
     const check = () => setIsMobile(window.innerWidth <= breakpoint);
     check();
@@ -35,6 +43,18 @@ export default function Home() {
   const controls = useAnimation();
   const isMobile = useIsMobile();
   const [open, setOpen] = useState(false);
+  const [hasMounted, setHasMounted] = useState(false);
+
+  // Attend que le composant soit monté pour définir le bon état
+  useEffect(() => {
+    setHasMounted(true);
+  }, []);
+
+  useEffect(() => {
+    if (hasMounted) {
+      setOpen(!isMobile); // ouvre par défaut sur desktop, ferme sur mobile
+    }
+  }, [isMobile, hasMounted]);
 
   useEffect(() => {
     console.log("isMobile", isMobile);
@@ -118,6 +138,7 @@ export default function Home() {
           )}
         </div>
       </motion.div>
+      <HeroParallax products={products} />
     </div>
   );
 }
